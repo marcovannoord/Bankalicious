@@ -10,3 +10,6 @@
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\obj\Debug\TestServer2.csprojResolveAssemblyReference.cache
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\obj\Debug\TestServer2.exe
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\obj\Debug\TestServer2.pdb
+Y:\Bankalicious\TestServer2\TestServer2\bin\Debug\TestServer2.exe.config
+Y:\Bankalicious\TestServer2\TestServer2\obj\Debug\TestServer2.exe
+Y:\Bankalicious\TestServer2\TestServer2\obj\Debug\TestServer2.pdb

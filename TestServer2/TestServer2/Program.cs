@@ -11,12 +11,20 @@ namespace TestServer2
     {
         static void Main(string[] args)
         {
+            //we maken een nieuwe database-context. Als de database nog niet bestaat; wordt deze aangemaakt
             using (var db = new BankContext())
             {
+
                 Console.WriteLine("Voer de naam van de eerste klant in:");
                 string name = Console.ReadLine();
+
+                //we maken een nieuw klant-object aan
                 var Client = new Client { Name = name };
+
+                //we we voegen deze klant aan de database toe
                 db.Clients.Add(Client);
+
+                //en we slaan de nieuwe dingen in de database op
                 db.SaveChanges();
 
                 Console.WriteLine("\nDe klanten zijn:");
