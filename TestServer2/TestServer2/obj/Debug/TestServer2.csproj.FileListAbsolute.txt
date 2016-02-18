@@ -1,0 +1,12 @@
+\\mac\home\documents\visual studio 2013\Projects\TestServer2\TestServer2\bin\Debug\TestServer2.exe.config
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\bin\Debug\TestServer2.exe
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\bin\Debug\TestServer2.pdb
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\bin\Debug\EntityFramework.dll
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\bin\Debug\EntityFramework.SqlServer.dll
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\bin\Debug\MySql.Data.dll
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\bin\Debug\MySql.Data.Entity.EF6.dll
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\bin\Debug\EntityFramework.xml
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\bin\Debug\EntityFramework.SqlServer.xml
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\obj\Debug\TestServer2.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\obj\Debug\TestServer2.exe
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TestServer2\TestServer2\obj\Debug\TestServer2.pdb
