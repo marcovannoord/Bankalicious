@@ -1,0 +1,10 @@
+\\mac\home\documents\visual studio 2015\Projects\BankClientApplication\BankClientApplication\bin\Debug\BankClientApplication.exe.config
+\\mac\home\documents\visual studio 2015\Projects\BankClientApplication\BankClientApplication\obj\Debug\BankClientApplication.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\BankClientApplication\BankClientApplication\bin\Debug\BankClientApplication.exe
+\\mac\home\documents\visual studio 2015\Projects\BankClientApplication\BankClientApplication\bin\Debug\BankClientApplication.pdb
+\\mac\home\documents\visual studio 2015\Projects\BankClientApplication\BankClientApplication\bin\Debug\Newtonsoft.Json.dll
+\\mac\home\documents\visual studio 2015\Projects\BankClientApplication\BankClientApplication\bin\Debug\System.Net.Http.Formatting.dll
+\\mac\home\documents\visual studio 2015\Projects\BankClientApplication\BankClientApplication\bin\Debug\Newtonsoft.Json.xml
+\\mac\home\documents\visual studio 2015\Projects\BankClientApplication\BankClientApplication\bin\Debug\System.Net.Http.Formatting.xml
+\\mac\home\documents\visual studio 2015\Projects\BankClientApplication\BankClientApplication\obj\Debug\BankClientApplication.exe
+\\mac\home\documents\visual studio 2015\Projects\BankClientApplication\BankClientApplication\obj\Debug\BankClientApplication.pdb
