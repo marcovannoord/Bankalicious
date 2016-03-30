@@ -92,7 +92,7 @@ Then, we need to start apache:
 
 `/etc/init.d/apache2 start`
 
-You should be able to hit your application using http://<public ip address>/
+You should be able to hit your application using `http://<public ip address>/`
 
 #Things to consider when using mono on ubuntu
 When using mono, some changes need to be made when running the webapp. 
