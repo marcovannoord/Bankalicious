@@ -9,6 +9,10 @@ apt-get update
 apt-get upgrade
 apt-get install mono-complete
 apt-get install apache2
+
+#and if you haven't done so yet, install MySql with
+apt-get install mysql-server
+
 /etc/init.d/apache2 stop
 apt-get install mono-apache-server2 libapache2-mod-mono libmono-i18n2.0-cil
 apt-get install mono-apache-server4
@@ -73,14 +77,14 @@ We edit this file to look like this:
 
 However, now we are running an old version of Mono, since the standard repository that Ubuntu uses, is outdated. To update mono, we do the following:
 
-# Add Signing Key using 
+## Add Signing Key using 
 
 ``` wget "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF" -O out && sudo apt-key add out && rm out```
 
-#Add Repository
+##Add Repository
 ```echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list  ```
   
-#Update repolist  
+##Update repolist  
  `sudo apt-get update  `  
 Now we can update our software using `sudo apt-get upgrade`. Finally, we bring mono to the latest version using `sudo apt-get install mono-complete`.
 
@@ -90,5 +94,31 @@ Then, we need to start apache:
 
 You should be able to hit your application using http://<<public ip address>>/
 
+#Things to consider when using mono on ubuntu
+When using mono, some changes need to be made when running the webapp. 
+Most importantly, keep in mind to change the connectionstring in web.config.
 
+To be able to do some quick development, download WinSCP, and use the auto-syncing function to keep the remote (ubuntu) directory up to date with your project. 
+
+#known issues:
+You might encounter an `System.Security.SecurityException. Couldn't impersonate token.` error. To fix this, in web.config, edit this:
+``` xml
+  <system.codedom>
+    <compilers>
+      <compiler language="c#;cs;csharp" extension=".cs" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:6 /nowarn:1659;1699;1701" />
+      <compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:14 /nowarn:41008 /define:_MYTYPE=\&quot;Web\&quot; /optionInfer+" />
+    </compilers>
+  </system.codedom>
+```
+to
+``` xml
+  <system.codedom>
+    <compilers>
+    <!--
+      <compiler language="c#;cs;csharp" extension=".cs" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:6 /nowarn:1659;1699;1701" />
+      <compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:14 /nowarn:41008 /define:_MYTYPE=\&quot;Web\&quot; /optionInfer+" />
+    -->
+    </compilers>
+  </system.codedom>
+```
 
