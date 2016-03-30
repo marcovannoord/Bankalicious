@@ -122,3 +122,5 @@ to
   </system.codedom>
 ```
 
+#bronnen
+Ik heb onder andere gebruik gemaakt van de tutorial op `http://www.bloomspire.com/blog/2015/3/9/how-to-host-aspnet-applications-on-linux-p3`, met aanpassing van de volgorde ivm breaking packages en de verouderde versie die daar wordt besproken.
